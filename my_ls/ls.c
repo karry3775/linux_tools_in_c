@@ -12,7 +12,7 @@
 #include <time.h>
 
 void print_permissions(mode_t mode) {
-  char perm[10];  // on stack
+  char perm[11];  // on stack
 
   // File type
   if (S_ISREG(mode))
